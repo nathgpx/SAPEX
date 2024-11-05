@@ -36,7 +36,17 @@
                 <option value="Falta de ar">Falta de ar</option>
                 <option value="Perda de olfato">Perda de olfato</option>
                 <option value="Dor de cabeça">Dor de cabeça</option>
-                <!-- Adicione outros sintomas conforme necessário -->
+                <option value="Sede excessiva">Sede excessiva</option>
+                <option value="Fome frequente">Fome frequente</option>
+                <option value="Perda de peso">Perda de peso</option>
+                <option value="Visão embaçada">Visão embaçada</option>
+                <option value="Fadiga">Fadiga</option>
+                <option value="Tontura">Tontura</option>
+                <option value="Palpitações">Palpitações</option>
+                <option value="Urticária">Urticária</option>
+                <option value="Inchaço">Inchaço</option>
+                <option value="Dor abdominal">Dor abdominal</option>
+                <option value="Diarreia">Diarreia</option>
             </select>
 
             <label for="observations">Observações adicionais:</label>
