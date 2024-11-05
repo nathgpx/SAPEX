@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Prontuário Médico</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Prontuário Médico</h1>
+        <form action="/create_record" method="POST">
+            <label for="name">Nome do Paciente:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Idade:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">Gênero:</label>
+            <select id="gender" name="gender">
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outro">Outro</option>
+            </select>
+
+            <label for="contact">Contato:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="symptoms">Sintomas:</label>
+            <select id="symptoms" name="symptoms" multiple>
+                <option value="Febre">Febre</option>
+                <option value="Dor de garganta">Dor de garganta</option>
+                <option value="Tosse">Tosse</option>
+                <option value="Dor no corpo">Dor no corpo</option>
+                <option value="Tosse seca">Tosse seca</option>
+                <option value="Falta de ar">Falta de ar</option>
+                <option value="Perda de olfato">Perda de olfato</option>
+                <option value="Dor de cabeça">Dor de cabeça</option>
+                <!-- Adicione outros sintomas conforme necessário -->
+            </select>
+
+            <label for="observations">Observações adicionais:</label>
+            <textarea id="observations" name="observations"></textarea>
+
+            <button type="submit">Criar Prontuário</button>
+        </form>
+    </div>
+</body>
+</html>
